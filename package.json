@@ -1,29 +1,22 @@
 {
-  "name": "headless-wordpress-poc",
-  "version": "0.1.0",
+  "name": "@faustwp/faust-scaffold",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "faust dev",
+    "build": "faust build",
+    "generate": "faust generatePossibleTypes",
+    "start": "faust start",
+    "format": "prettier . --write",
+    "test:format": "prettier . --check"
   },
   "dependencies": {
-    "graphql": "^16.11.0",
-    "graphql-request": "^7.2.0",
-    "next": "15.5.3",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.5.3",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "@apollo/client": "^3.13.8",
+    "@faustwp/cli": "^3.2.3",
+    "@faustwp/core": "^3.2.6",
+    "graphql": "^16.10.0",
+    "next": "^15.5.2",
+    "prettier": "^3.5.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }
